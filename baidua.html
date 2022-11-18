@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>百度</title>
+    <style type="text/css">
+        input{
+            margin: 0;
+            padding: 0;
+        }
+        #nav{
+            /*background: lightblue;*/
+            width: 600px;
+            height: 30px;
+            list-style: none; /* 去除黑点*/
+            margin: 0;
+            padding: 0;
+            display: flex;    /*弹性布局  均匀分布开了*/
+            justify-content: space-around; /*between  两边没有间距了*/
+
+
+      
+        }
+        #nav1{
+            width: 1700px;
+            height: 30px;
+            list-style: none; /* 去除黑点*/
+            margin: 0 auto;
+            padding: 0;
+            display: flex;    /*弹性布局  均匀分布开了*/
+            justify-content: space-around; /*between  两边没有间距了*/
+            position: absolute;
+            left: 80px;
+            top: 1100px;
+            /*postion: fixed
+
+            width: 1200px;
+            bottom: 0;
+            right: 0;
+
+            */
+
+
+
+        }
+        #nav a:hover{
+            color: rgb(60, 93, 242);
+        }
+        #nav1 a{ /*后代选择器*/
+            color: lightgrey;
+            font-size: 10px;
+            text-decoration: none  /*去除下划线*/;
+            line-height: 30px;/*垂直居中*/
+
+        }
+        #nav1 a:hover{
+            color: black;
+        }
+
+        #nav a{ /*后代选择器*/
+            color: #000;
+            font-size: 13px;
+            text-decoration: none  /*去除下划线*/;
+            line-height: 30px;/*垂直居中*/
+        }
+        /*#nav>a{ /*子代选择器   亲儿子*/
+    
+        /*li{
+             float: left;
+             margin-left: 20px;
+             margin-right: 20px;
+        }*/
+        /*弹性布局*/
+
+        #topRight{
+            /*background: lightpink;*/
+            /*float: right;*/
+            position: absolute;
+            right: 10px;
+            top: 10px;
+        /*    margin-left: 20px;
+            margin-right: 20px;*/
+            width: 140px;
+            display: flex; 
+            justify-content: space-between;
+        }
+        #topRight>input{
+            background: #fff;
+            border: 0;
+            cursor: pointer;
+            /*放到链接上变成小手*/
+        }
+        #topRight>#login{
+            background: #38f; /*!important*/;
+            color: #fff;
+            width: 48px;
+            border-radius: 6px;
+        }
+        /*权重 权值 
+        行内1000 
+        id 100 
+        class 10 
+        tag（标签）1*/
+        #center{
+            width: 600px;
+            height: 250px;
+            margin: 150px auto 0;
+        /*    background: lightpink;*/
+
+        }
+        #imgBox{
+            width: 220px;
+            margin: 0 auto;
+            /*background: lightblue;*/
+
+
+        }
+        #imgBox>img{
+            width: 100%;   /*遵循父元素的高度 220px*/
+
+        }
+        #iptBox{
+            width: 100%;
+            height: 44px;
+            /*background: lightblue;*/
+            /*display: flex;    弹性布局  均匀分布开了
+            justify-content: space-around; between  两边没有间距了*/
+            border: 1px solid lightgray;
+            border-radius: 10px 10px 10px 10px;
+        }
+        #iptBox>input[type='text']{/*属性选择器*/
+        width: 500px;
+        height: 100%;
+        float: left;
+        border: 0;
+        border-radius:  10px 0 0 10px ;
+
+
+        }
+        #iptBox>input[type='button']{/*属性选择器*/
+        width: 100px;
+        height: 100%;
+        float: left;
+        border: 0;
+        color: #fff;
+        background: #38f;
+        border-radius: 0 10px 10px 0;
+    /*    border-radius: 10px;*/
+
+        }
+    </style>
+
+</head>
+<body>
+<ul id="nav">
+    <li><a href="">新闻</a></li>
+    <li><a href="">hao123</a></li>
+    <li><a href="">地图</a></li>
+    <li><a href="">直播</a></li>
+    <li><a href="">视频</a></li>
+    <li><a href="">贴吧</a></li>
+    <li><a href="">学术</a></li>
+    <li><a href="">更多</a></li>
+</ul>
+<div id="topRight">
+    <input type="button" name="" value="设置">
+    <input type="button" id="login" name="" value="登录">
+
+</div>
+<div id="center">
+    <div id="imgBox">
+        <img src="https://www.baidu.com/img/PCtm_d9c8750bed0b3c7d089fa7d55720d6cf.png">
+    </div>
+    <div id="iptBox">
+        <input type="text" name="">
+        <input type="button" name="" value="百度一下">
+    </div>
+</div>
+<ul id="nav1">
+    <li><a href="">关于百度</a></li>
+    <li><a href="">About Baidu</a></li>
+    <li><a href="">使用百度前必读</a></li>
+    <li><a href="">帮助中心</a></li>
+    <li><a href="">京公网安备11000002000001号</a></li>
+    <li><a href="">京ICP证030173号</a></li>
+    <li><a>@2021 Baidu</a></li>
+    <li><a>互联网药品信息服务资格证书 (京)-经营性-2017-0020</a></li>
+    <li><a href="">信息网络传播视听节目许可证0110516</a></li>
+
+</ul>
+</body>
+</html>
